@@ -27,7 +27,7 @@ const DICE_IMAGE = {
 const Dice = ({ color = "blue", num = 1 }) => {
     const src = DICE_IMAGE[color][num - 1];
     const alt = `${color} ${num}`;
-    return <img src={src} alt={alt}></img>;
+    return <img className="Dice" src={src} alt={alt}></img>;
 };
 
 export default Dice;
